@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "neotech", Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .rightMenu {
+    @apply p-2 rounded-md hover:border-2 hover:border-green-300;
+    
+  }
+  
+}
+
+.font-orbitron {
+  font-family: var(--font-orbitron);
+}
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+.font-neotech {
+  font-family: var(--font-neotech);
+}
+
