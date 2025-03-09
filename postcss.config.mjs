@@ -1,5 +1,13 @@
 const config = {
-  plugins: ["@tailwindcss/postcss"],
+  plugins: {
+    "@tailwindcss/postcss": {},
+  },
+  theme: {
+    extend: {
+      screens: {
+        'xs': '360px',
+      },
+    },
+  },
 };
-
 export default config;

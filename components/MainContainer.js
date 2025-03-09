@@ -12,7 +12,7 @@ const MainContainer = () => {
 
   return (
     <div
-      className="md:w-[75%] ml-auto w-full h-[100vh] rounded-md overflow-hidden bg-gradient-to-br from-[rgba(75,30,133,1)] to-[rgba(75,30,133,0.01)]"
+      className="w-full lg:w-[75%] ml-auto h-[100vh] rounded-md overflow-hidden bg-gradient-to-br from-[rgba(75,30,133,1)] to-[rgba(75,30,133,0.01)]"
     >
       <Navbar />
       <div
