@@ -17,13 +17,14 @@ const MainContainer = () => {
       <Navbar />
       <div
         className="
-          h-full w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 oveflow-hidden
+          h-full w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 overflow-hidden
         "
       >
        {skill && <SkillPage />}
         {project && <ProjectPage />}
         {contact && <ContactPage />}
         {resume && <ResumePage />}
+        {(!skill && !project && !contact && !resume) && <SkillPage/>}
       </div>
     </div>
   );
