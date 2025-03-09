@@ -7,7 +7,7 @@ const Navbar = () => {
   console.log("Navbar rendered");
 
   return (
-    <div className="flex sm:gap-2  m-1 rounded-md font-orbitron bg-opacity-30 backdrop-filter backdrop-blur-lg shadow-lg">
+    <div className="flex sm:gap-2 w-full rounded-md font-orbitron bg-opacity-30 backdrop-filter backdrop-blur-lg backdrop-brightness-75 shadow-lg lg:fixed lg:z-10">
       <NavButton content="Skills" />
       <NavButton content="Projects" />
       <NavButton content="Contact" />

@@ -12,12 +12,12 @@ const MainContainer = () => {
 
   return (
     <div
-      className="w-full lg:w-[75%] ml-auto h-[100vh] rounded-md overflow-hidden bg-gradient-to-br from-[rgba(75,30,133,1)] to-[rgba(75,30,133,0.01)]"
+      className="w-full  lg:w-[73%] ml-auto  rounded-md overflow-hidden bg-gradient-to-br from-[rgba(75,30,133,1)] to-[rgba(75,30,133,0.01)] relative"
     >
       <Navbar />
       <div
         className="
-          h-full w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 
+          h-full w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 oveflow-hidden
         "
       >
        {skill && <SkillPage />}
