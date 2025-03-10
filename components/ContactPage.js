@@ -26,7 +26,7 @@ function ContactPage() {
 
   return (
     <div className=" w-full h-[100vh] flex items-center justify-center">
-    <form onSubmit={onSubmit} className=" flex flex-col items-center justify-center space-y-4 p-4   md:w-[50%] border-2 border-[rgba(75,30,133,0.5)]  rounded-[1.5em] bg-gradient-to-br from-[rgba(75,30,133,1)] to-[rgba(75,30,133,0.01)] text-white backdrop-blur-[12px]">
+    <form onSubmit={onSubmit} className=" flex flex-col items-center justify-center space-y-4 p-4   md:w-[50%] border-2 border-[rgba(75,30,133,0.5)]  rounded-[1.5em] bg-gradient-to-br from-[rgba(75,30,133,1)] to-[rgba(75,30,133,0.01)] text-white backdrop-blur-[12px]" method="POST" id="form">
       <div className="w-full max-w-md">
         <label htmlFor="name" className="block text-sm font-medium ">Name:</label>
         <input type="text" id="name" name="name" required className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter your name" />
