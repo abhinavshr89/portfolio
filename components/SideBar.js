@@ -5,7 +5,7 @@ const SideBar = () => {
   return (
     <div
       id="main_sidebar_div"
-      className="lg:fixed max-lg:relative w-full h-[100vh] lg:w-[25%] sm:p-7 p-3 overflow-hidden  flex flex-col items-center justify-center rounded-2xl bg-[#461D7B]  "
+      className="lg:fixed max-lg:relative w-full h-[100vh] lg:w-[25%] sm:p-7 p-3 overflow-hidden flex flex-col items-center justify-center rounded-2xl bg-[#461D7B]"
     >
       <div
         id="image_div_container"
@@ -21,23 +21,23 @@ const SideBar = () => {
         className="bg-gradient-to-r from-[#2F3D59] to-[#0B1326] h-full rounded-3xl w-full p-2 flex mt-[70px] max-sm:mt-[70px] max-lg:mt-[170px] justify-center font-poppins"
       >
         <div className="mt-[150px] flex flex-col items-center">
-          <h1 className="text-[28px] max-sm:text-[20px]">
-            Abhinav Shrivastav{" "}
+          <h1 className="text-[23px] max-sm:text-[20px] text-center  border-b-[0.5px] border-y-gray-400">
+            Abhinav Shrivastav
           </h1>
           <div className="mt-3 flex flex-col gap-1">
-            <h2 className="text-[14px] max-sm:text-[12px] gap-[7px] flex text-gray-400">
-              <Code height={20} width={20} />
-              <span>Frontend Developer</span>
+            <h2 className="text-[11px] max-sm:text-[12px] gap-[7px] flex text-gray-400 items-center">
+              <Code height={15} width={15} />
+              <span className="ml-2">Frontend Developer</span>
             </h2>
 
-            <h2 className="text-[14px] max-sm:text-[12px] gap-[7px] flex text-gray-400">
-              <MapPin height={20} width={20} />
-              <span>Dehradun, India</span>
+            <h2 className="text-[11px] max-sm:text-[12px] gap-[7px] flex text-gray-400 items-center">
+              <MapPin height={15} width={15} />
+              <span className="ml-2">Dehradun, India</span>
             </h2>
 
-            <h2 className="text-[14px] max-sm:text-[12px] gap-[7px] flex justify-center items-center text-gray-400">
-              <Mail height={20} width={20} />
-              <span>abhinav312003@gmail.com</span>
+            <h2 className="text-[11px] max-sm:text-[12px] gap-[7px] flex justify-center items-center text-gray-400">
+              <Mail height={15} width={15} />
+              <span className="ml-2">abhinav312003@gmail.com</span>
             </h2>
           </div>
         </div>

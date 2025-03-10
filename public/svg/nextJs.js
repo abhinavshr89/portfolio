@@ -5,23 +5,18 @@ const NextjsSVG = () => {
   useEffect(() => {
     const tl = gsap.timeline();
 
-    tl.fromTo(
-      "#path1",
-      { y: 128 },
-      { y: 0, duration: 2, ease: "power2.out" }
-    )
+    tl.fromTo("#path1", { y: 128 }, { y: 0, duration: 2, ease: "power2.out" })
+      .fromTo(
+        "#circle",
+        { opacity: 0 },
+        { opacity: 1, duration: 2, ease: "power2.out" }
+      )
       .fromTo(
         "#path2",
         { y: -128 },
         { y: 0, duration: 2, ease: "power2.out" },
         "-=1.5"
-      )
-      .to("#circle", {
-        rotation: 360,
-        transformOrigin: "center",
-        duration: 2,
-        ease: "power2.out",
-      });
+      );
   }, []);
 
   return (
