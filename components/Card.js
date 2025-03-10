@@ -10,7 +10,7 @@ const Card = ({ icon: Icon, title, details }) => {
 
     return (
         <div 
-            className="h-[16em] sm:w-[18em] border-2 border-[rgba(75,30,133,0.5)] rounded-[1.5em] bg-gradient-to-br from-[rgba(75,30,133,1)] to-[rgba(75,30,133,0.01)] text-white font-nunito p-[1em] flex justify-center items-left flex-col gap-[0.75em] backdrop-blur-[12px] hover:border-[rgba(75,30,133,1)] hover:from-[rgba(75,30,133,0.8)] hover:to-[rgba(75,30,133,0.2)] transition-all duration-300 hover:shadow-2xl"
+            className="h-[16em] border-2 border-[rgba(75,30,133,0.5)] rounded-[1.5em] bg-gradient-to-br from-[rgba(75,30,133,1)] to-[rgba(75,30,133,0.01)] text-white font-nunito p-[1em] flex justify-center items-left flex-col gap-[0.75em] backdrop-blur-[12px] hover:border-[rgba(75,30,133,1)] hover:from-[rgba(75,30,133,0.8)] hover:to-[rgba(75,30,133,0.2)] transition-all duration-300 hover:shadow-2xl"
             onClick={handleClick}
         >
             <div className="flex flex-col justify-center items-center">
