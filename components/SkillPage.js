@@ -11,7 +11,7 @@ const SkillPage = () => {
             Frontend
           </h1>
         </div>
-        <div className="grid grid-cols-3 gap-4 scroll-auto max-lg:grid-cols-2 max-sm:grid-cols-1 mt-2">
+        <div className="grid grid-cols-3 gap-4 scroll-auto max-lg:grid-cols-2 max-sm:grid-cols-1 mt-5">
           {frontendSkills?.map((skill, index) => (
             <Card
               key={index}
@@ -28,7 +28,7 @@ const SkillPage = () => {
             Backend
           </h1>
         </div>
-        <div className="grid grid-cols-3 gap-4 scroll-auto max-lg:grid-cols-2 max-sm:grid-cols-1 mt-2">
+        <div className="grid grid-cols-3 gap-4 scroll-auto max-lg:grid-cols-2 max-sm:grid-cols-1 mt-5">
           {backendSkills?.map((skill, index) => (
             <Card
               key={index}
@@ -45,7 +45,7 @@ const SkillPage = () => {
             Databases
           </h1>
         </div>
-        <div className="grid grid-cols-3 gap-4 scroll-auto max-lg:grid-cols-2 max-sm:grid-cols-1 mt-2">
+        <div className="grid grid-cols-3 gap-4 scroll-auto max-lg:grid-cols-2 max-sm:grid-cols-1 mt-5">
           {databases?.map((skill, index) => (
             <Card
               key={index}
@@ -62,7 +62,7 @@ const SkillPage = () => {
             Languages
           </h1>
         </div>
-        <div className="grid grid-cols-3 gap-4 scroll-auto max-lg:grid-cols-2 max-sm:grid-cols-1 mt-2">
+        <div className="grid grid-cols-3 gap-4 scroll-auto max-lg:grid-cols-2 max-sm:grid-cols-1 mt-5">
           {languages?.map((skill, index) => (
             <Card
               key={index}
@@ -79,7 +79,7 @@ const SkillPage = () => {
             Tools
           </h1>
         </div>
-        <div className="grid grid-cols-3 gap-4 scroll-auto max-lg:grid-cols-2 max-sm:grid-cols-1 mt-2">
+        <div className="grid grid-cols-3 gap-4 scroll-auto max-lg:grid-cols-2 max-sm:grid-cols-1 mt-5">
           {tools?.map((skill, index) => (
             <Card
               key={index}
