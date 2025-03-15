@@ -16,7 +16,7 @@ const SideBar = () => {
       {/* Avatar Image Section */}
       <div
         id="image_div_container"
-        className="z-10 max-sm:w-[40%] min-w-[200px] md:max-w-[250px] w-[60%] absolute top-[20px] p-3 rounded-2xl bg-[#461D7B]"
+        className="z-10 max-sm:w-[70%] min-w-[200px] max-w-[250px] w-[60%] absolute top-[20px] p-3 rounded-2xl bg-[#461D7B]"
       >
         <div className="w-full rounded-2xl bg-yellow-500 flex justify-center items-center m-auto">
           <Image src="/favatar.png" alt="avatar" width={300} height={300} />
