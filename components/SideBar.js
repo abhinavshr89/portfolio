@@ -26,7 +26,7 @@ const SideBar = () => {
       {/* Details Section */}
       <div
         id="details"
-        className="bg-gradient-to-r from-[#2F3D59] to-[#0B1326] rounded-3xl w-full p-2 flex justify-center font-poppins h-[90%] lg:pb-[15%]"
+        className="bg-gradient-to-r from-[#2F3D59] to-[#0B1326] rounded-3xl w-full p-2 flex justify-center font-poppins h-[90%] "
       >
         <div className="mt-[150px] flex flex-col items-center justify-center sm:justify-end max-sm:pb-[50px] sm:pb-[50px] lg:pb-[100px] w-full">
           {/* Name */}
