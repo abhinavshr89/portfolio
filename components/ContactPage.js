@@ -74,7 +74,27 @@ function ContactPage() {
 
         <button 
           type="submit" 
-          className="w-full max-w-md px-4 py-2 bg-indigo-600 text-white font-medium rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          className=" cursor-pointer 
+                transition-all 
+                bg-[rgba(75,30,133,1)] 
+                text-white 
+                sm:px-4 
+                py-2 
+                rounded-sm 
+                border-[#25143b] 
+                border-1 
+                border-b-[4px] 
+                hover:brightness-110 
+                hover:-translate-y-[1px] 
+                hover:border-b-[6px] 
+                active:border-b-[2px] 
+                active:brightness-90 
+                active:translate-y-[2px] 
+                text-[20px] 
+                max-sm:text-[14px] 
+                max-sm:px-2
+                flex items-center justify-center
+                w-[88%]"
           disabled={loading}
         >
           {loading ? "Submitting..." : "Submit"}

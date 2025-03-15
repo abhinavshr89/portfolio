@@ -1,6 +1,13 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { Mail, Code, MapPin } from "lucide-react";
+import { SiLeetcode } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import Link from "next/link";
+import Button from "./Button";
+
 const SideBar = () => {
   return (
     <div
@@ -39,6 +46,35 @@ const SideBar = () => {
               <Mail height={15} width={15} />
               <span className="ml-2">abhinav312003@gmail.com</span>
             </h2>
+          </div>
+
+          {/* Section for Social Links */}
+          <div id="social-links" className="flex mt-[30px] gap-3">
+            <Link
+              href="https://leetcode.com/u/abhinav312003/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiLeetcode size={30} />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/abhinav3113/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin size={30} />
+            </Link>
+            <Link
+              href="https://github.com/abhinavshr89"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub size={30} />
+            </Link>
+          </div>
+          {/* Download Resume Button */}
+          <div className="mt-4">
+            <Button content="Download Resume" />
           </div>
         </div>
       </div>

@@ -121,14 +121,7 @@ const tools = [
       "Familiar with GitHub and Git workflows"
     ]
   },
-  {
-    "title": "Docker",
-    "icon": DockerSVG,
-    "details": [
-      "Worked with containerization using Docker",
-      "Experience with Docker Compose"
-    ]
-  },
+ 
   {
     "title": "Postman",
     "icon": PostmanSVG,

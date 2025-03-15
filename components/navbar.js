@@ -11,7 +11,7 @@ const Navbar = () => {
       <NavButton content="Skills" />
       <NavButton content="Projects" />
       <NavButton content="Contact" />
-      <NavButton content="Resume" />
+     
     </div>
   );
 };
