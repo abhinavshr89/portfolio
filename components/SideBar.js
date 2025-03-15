@@ -12,7 +12,7 @@ const SideBar = () => {
   return (
     <div
       id="main_sidebar_div"
-      className="lg:fixed max-lg:relative w-full h-[100vh] lg:w-[25%] sm:p-7 p-3 overflow-hidden flex flex-col items-center justify-center rounded-2xl bg-[#461D7B]"
+      className="lg:fixed max-lg:relative w-full max-sm:h-[90vh] h-[100vh] lg:w-[25%] sm:p-7 p-3 overflow-hidden flex flex-col items-center justify-center rounded-2xl bg-[#461D7B]"
     >
       <div
         id="image_div_container"
