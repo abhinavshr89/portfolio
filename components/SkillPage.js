@@ -7,7 +7,7 @@ const SkillPage = () => {
     <>
       <div className="px-2">
         <div className="px-2">
-          <h1 className="text-3xl font-bold lg:mt-14 p-1 font-orbitron tracking-[5px] border-b-[0.5px] border-gray-100">
+          <h1 className="text-3xl font-bold lg:mt-14 p-1 font-orbitron tracking-[5px] border-b-[0.5px] border-gray-100 max-sm:mt-2">
             Frontend
           </h1>
         </div>
@@ -24,7 +24,7 @@ const SkillPage = () => {
       </div>
       <div className="px-2">
         <div className="px-2">
-          <h1 className="text-3xl p-1 font-bold lg:mt-14 font-orbitron tracking-[5px] border-b-[0.5px] border-gray-100">
+          <h1 className="text-3xl p-1 font-bold lg:mt-14 font-orbitron tracking-[5px] border-b-[0.5px] border-gray-100 max-sm:mt-2">
             Backend
           </h1>
         </div>
@@ -41,7 +41,7 @@ const SkillPage = () => {
       </div>
       <div className="px-2">
         <div className="px-2">
-          <h1 className="text-3xl p-1 font-bold lg:mt-14 font-orbitron tracking-[5px] border-b-[0.5px] border-gray-100">
+          <h1 className="text-3xl p-1 font-bold lg:mt-14 font-orbitron tracking-[5px] border-b-[0.5px] border-gray-100 max-sm:mt-2">
             Databases
           </h1>
         </div>
@@ -58,7 +58,7 @@ const SkillPage = () => {
       </div>
       <div className="px-2">
         <div className="px-2">
-          <h1 className="text-3xl p-1 font-bold lg:mt-14 font-orbitron tracking-[5px] border-b-[0.5px] border-gray-100">
+          <h1 className="text-3xl p-1 font-bold lg:mt-14 font-orbitron tracking-[5px] border-b-[0.5px] border-gray-100 max-sm:mt-2">
             Languages
           </h1>
         </div>
@@ -75,7 +75,7 @@ const SkillPage = () => {
       </div>
       <div className="px-2">
         <div className="px-2">
-          <h1 className="text-3xl p-1 font-bold lg:mt-14 font-orbitron tracking-[5px] border-b-[0.5px] border-gray-100">
+          <h1 className="text-3xl p-1 font-bold lg:mt-14 font-orbitron tracking-[5px] border-b-[0.5px] border-gray-100 max-sm:mt-2">
             Tools
           </h1>
         </div>
