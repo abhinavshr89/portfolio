@@ -74,7 +74,14 @@ const SideBar = () => {
           </div>
           {/* Download Resume Button */}
           <div className="mt-4">
-            <Button content="Download Resume" />
+            <a
+              href="/Abhinav_Shrivastav_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Abhinav_Shrivastav_Resume.pdf"
+            >
+              <Button content="Download Resume" />
+            </a>
           </div>
         </div>
       </div>
