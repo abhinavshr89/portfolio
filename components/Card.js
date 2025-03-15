@@ -16,13 +16,13 @@ const Card = ({ icon: Icon, title, details }) => {
             <div className="flex flex-col justify-center items-center">
                 <Icon key={iconKey} />
                 <h1 className="text-[2em] font-bold text-center">{title}</h1>
-                <p className="text-[0.85em] flex flex-col gap-2">
+                <div className="text-[0.85em] flex flex-col gap-2">
                     {details.map((detail, index) => (
                         <p key={index} className="text-[10px] font-light flex items-center justify-left gap-2 skill_detail">
                             <CircleCheck size={15} /> <span>{detail}</span>
                         </p>
                     ))}
-                </p>
+                </div>
             </div>
         </div>
     );

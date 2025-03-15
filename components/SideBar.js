@@ -19,7 +19,7 @@ const SideBar = () => {
         className="z-10 w-[60%] absolute top-[20px] p-3 rounded-2xl bg-[#461D7B]"
       >
         <div className="w-full rounded-2xl bg-yellow-500 flex justify-center items-center m-auto">
-          <Image src="/favatar.png" width={300} height={300} />
+          <Image src="/favatar.png" alt="avatar" width={300} height={300} />
         </div>
       </div>
 

@@ -4,7 +4,7 @@ import { IoDownloadOutline } from "react-icons/io5";
 const Button = ({ content }) => {
     return (
         <button
-            onClick={() => setActive(content.toLowerCase())}
+            
             className="
                 cursor-pointer 
                 transition-all 

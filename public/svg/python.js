@@ -69,8 +69,8 @@ const PythonSvg = () => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(64.0842 119.413) rotate(-90) scale(6.41832 28.2139)"
                 >
-                    <stop stopColor="#B8B8B8" stop-opacity="0.498" />
-                    <stop offset="1" stopColor="#7F7F7F" stop-opacity="0" />
+                    <stop stopColor="#B8B8B8" stopOpacity="0.498" />
+                    <stop offset="1" stopColor="#7F7F7F" stopOpacity="0" />
                 </radialGradient>
             </defs>
         </svg>

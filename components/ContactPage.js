@@ -94,7 +94,10 @@ function ContactPage() {
                 max-sm:text-[14px] 
                 max-sm:px-2
                 flex items-center justify-center
-                w-[88%]"
+                w-[88%]
+                font-orbitron
+                tracking-[3px]
+                "
           disabled={loading}
         >
           {loading ? "Submitting..." : "Submit"}
