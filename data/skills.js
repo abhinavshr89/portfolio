@@ -114,7 +114,7 @@ const languages = [
 
 const tools = [
   {
-    "title": "Git",
+    "title": "Git and Github",
     "icon": GitSVG,
     "details": [
       "Experience with Git version control",
@@ -127,7 +127,7 @@ const tools = [
     "icon": PostmanSVG,
     "details": [
       "Used Postman for API testing and documentation",
-      "Experience with automated testing using Postman scripts"
+     
     ]
   }
 ];
