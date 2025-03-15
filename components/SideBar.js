@@ -12,11 +12,11 @@ const SideBar = () => {
   return (
     <div
       id="main_sidebar_div"
-      className="lg:fixed max-lg:relative w-full max-sm:h-[90vh] h-[100vh] lg:w-[25%] sm:p-7 p-3 overflow-hidden flex flex-col items-center justify-center rounded-2xl bg-[#461D7B]"
+      className="lg:fixed max-lg:relative w-full max-sm:h-[90vh] h-[100vh] lg:w-[25%] sm:p-7 p-3 overflow-hidden flex flex-col items-center justify-end rounded-2xl bg-[#461D7B]"
     >
       <div
         id="image_div_container"
-        className="z-10 w-[60%] absolute top-[20px] p-3 rounded-2xl bg-[#461D7B]"
+        className="z-10 max-sm:w-[40%] max-md:min-w-[200px] w-[60%] absolute top-[20px] p-3 rounded-2xl bg-[#461D7B]"
       >
         <div className="w-full rounded-2xl bg-yellow-500 flex justify-center items-center m-auto">
           <Image src="/favatar.png" alt="avatar" width={300} height={300} />
@@ -25,9 +25,9 @@ const SideBar = () => {
 
       <div
         id="details"
-        className="bg-gradient-to-r from-[#2F3D59] to-[#0B1326] h-full rounded-3xl w-full p-2 flex mt-[70px] max-sm:mt-[70px] max-lg:mt-[170px] justify-center font-poppins"
+        className="bg-gradient-to-r from-[#2F3D59] to-[#0B1326]  rounded-3xl w-full p-2 flex  justify-center font-poppins  h-[90%]"
       >
-        <div className="mt-[150px] flex flex-col items-center">
+        <div className="mt-[150px] flex flex-col items-center justify-center  sm:justify-end max-sm:pb-[50px] sm:pb-[50px] lg:pb-[100px]">
           <h1 className="text-[23px] max-sm:text-[20px] text-center  border-b-[0.5px] border-y-gray-400">
             Abhinav Shrivastav
           </h1>
