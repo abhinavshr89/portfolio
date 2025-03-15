@@ -30,9 +30,6 @@ body {
     @apply p-2 rounded-md hover:border-2 hover:border-green-300;
     
   }
-  .skillHeading{
-    @apply text-3xl font-bold lg:mt-14 p-1 font-orbitron tracking-[5px] border-b-[0.5px] border-gray-100;
-  }
   
 }
 
