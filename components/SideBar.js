@@ -34,7 +34,7 @@ const SideBar = () => {
           <div className="mt-3 flex flex-col gap-1">
             <h2 className="text-[11px] max-sm:text-[12px] gap-[7px] flex text-gray-400 items-center">
               <Code height={15} width={15} />
-              <span className="ml-2">Frontend Developer</span>
+              <span className="ml-2">Full Stack Developer</span>
             </h2>
 
             <h2 className="text-[11px] max-sm:text-[12px] gap-[7px] flex text-gray-400 items-center">
