@@ -28,7 +28,7 @@ const SideBar = () => {
         id="details"
         className="bg-gradient-to-r from-[#2F3D59] to-[#0B1326] rounded-3xl w-full p-2 flex justify-center font-poppins h-[90%] "
       >
-        <div className="mt-[150px] flex flex-col items-center justify-center sm:justify-end max-sm:pb-[50px] sm:pb-[50px] lg:pb-[100px] w-full">
+        <div className="mt-[150px] flex flex-col items-center justify-center sm:justify-end max-sm:pb-[50px] sm:pb-[50px] lg:pb-[40%] w-full">
           {/* Name */}
           <h1 className="text-[24px] max-sm:text-[24px] max-lg:text-[35px] text-center border-b-[0.5px] border-y-gray-400">
             Abhinav Shrivastav
