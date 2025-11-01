@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Navbar from "./navbar";
 import SkillPage from "./SkillPage";
@@ -6,25 +6,19 @@ import ContactPage from "./ContactPage";
 import ProjectPage from "./ProjectPage";
 import ResumePage from "./ResumePage";
 import useStore from "../store/navSwitch";
+import ProfilePage from "./ProfilePage";
 
 const MainContainer = () => {
-  const { skill, project, contact, resume } = useStore();
+  const { skill, project, contact, resume, profile } = useStore();
 
   return (
-    <div
-      className="w-full  lg:w-[73%] ml-auto  rounded-md overflow-hidden bg-gradient-to-br from-[rgba(75,30,133,1)] to-[rgba(75,30,133,0.01)] relative"
-    >
+    <div className="w-full ml-auto rounded-md overflow-hidden bg-gray-50 relative">
       <Navbar />
-      <div
-        className="
-          h-full w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 overflow-hidden
-        "
-      >
-       {skill && <SkillPage />}
+      <div className="h-full w-full overflow-hidden">
+        {profile && <ProfilePage />}
+        {skill && <SkillPage />}
         {project && <ProjectPage />}
         {contact && <ContactPage />}
-        {resume && <ResumePage />}
-        {(!skill && !project && !contact && !resume) && <SkillPage/>}
       </div>
     </div>
   );

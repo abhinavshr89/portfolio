@@ -53,87 +53,89 @@ function ContactPage() {
   };
 
   return (
-    <div className="w-full h-[100vh] flex items-center justify-center max-sm:p-1">
-      <form
-        onSubmit={onSubmit}
-        className="flex flex-col items-center justify-center space-y-4 p-4 md:w-[50%] border-2 border-[rgba(75,30,133,0.5)] rounded-[1.5em] bg-gradient-to-br from-[rgba(75,30,133,1)] to-[rgba(75,30,133,0.01)] text-white backdrop-blur-[12px]"
-        method="POST"
-      >
-       
-        <div className="w-full ">
-          <label htmlFor="name" className="block text-sm font-medium">
-            Name:
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-            placeholder="Enter your name"
-          />
-        </div>
+    <div className="w-full min-h-[100vh] bg-gray-50 flex items-center justify-center p-8 max-sm:p-4 pt-[80px] max-sm:pt-[60px]">
+      <div className="w-full max-w-2xl">
+        <h1 className="text-4xl max-sm:text-2xl font-bold mb-10 max-sm:mb-6 font-orbitron tracking-[5px] max-sm:tracking-[2px] text-center text-gray-800">
+          Contact Me
+        </h1>
 
-        <div className="w-full ">
-          <label htmlFor="email" className="block text-sm font-medium">
-            Email:
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-            placeholder="Enter your email"
-          />
-        </div>
-
-        <div className="w-full ">
-          <label htmlFor="message" className="block text-sm font-medium">
-            Message:
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            required
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-            placeholder="Enter the message"
-          ></textarea>
-        </div>
-
-        <button
-          type="submit"
-          className=" cursor-pointer 
-                transition-all 
-                bg-[rgba(75,30,133,1)] 
-                text-white 
-                sm:px-4 
-                py-2 
-                rounded-sm 
-                border-[#25143b] 
-                border-1 
-                border-b-[4px] 
-                hover:brightness-110 
-                hover:-translate-y-[1px] 
-                hover:border-b-[6px] 
-                active:border-b-[2px] 
-                active:brightness-90 
-                active:translate-y-[2px] 
-                text-[20px] 
-                max-sm:text-[14px] 
-                max-sm:px-2
-                flex items-center justify-center
-                w-full
-                font-orbitron
-                tracking-[3px]
-                "
-          disabled={loading}
+        <form
+          onSubmit={onSubmit}
+          className="flex flex-col space-y-6 p-8 max-sm:p-6 bg-white border border-gray-300 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300"
+          method="POST"
         >
-          {loading ? "Submitting..." : "Submit"}
-        </button>
+          <div className="w-full">
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium text-gray-700 mb-2"
+            >
+              Name:
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              className="block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent text-gray-700"
+              placeholder="Enter your name"
+            />
+          </div>
 
-        {message && <p className="text-center mt-2 text-sm">{message}</p>}
-      </form>
+          <div className="w-full">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700 mb-2"
+            >
+              Email:
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              className="block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent text-gray-700"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div className="w-full">
+            <label
+              htmlFor="message"
+              className="block text-sm font-medium text-gray-700 mb-2"
+            >
+              Message:
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              rows="5"
+              className="block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent text-gray-700 resize-none"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            className="w-full cursor-pointer transition-all bg-gray-800 text-white px-6 py-3 rounded-lg border border-gray-800 hover:bg-gray-700 hover:shadow-lg active:bg-gray-900 text-base font-medium font-orbitron tracking-[2px] disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled={loading}
+          >
+            {loading ? "Submitting..." : "Submit"}
+          </button>
+
+          {message && (
+            <p
+              className={`text-center text-sm font-medium ${
+                message.includes("success")
+                  ? "text-green-600"
+                  : "text-red-600"
+              }`}
+            >
+              {message}
+            </p>
+          )}
+        </form>
+      </div>
     </div>
   );
 }

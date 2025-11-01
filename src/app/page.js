@@ -7,7 +7,7 @@ export default function Home() {
       <div
         className="h-[100%] relative flex gap-2 lg:flex-row flex-col p-2 font-poppins"
       >
-        <SideBar />
+        {/* <SideBar /> */}
         <MainContainer />
       </div>
     </>

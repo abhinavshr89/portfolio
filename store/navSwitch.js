@@ -5,6 +5,7 @@ const useStore = create((set) => ({
     resume: false,
     contact: false,
     projects: false,
+    profile: true,
 
     setActive: (section) => {
         console.log('setActive called with section:', section);
@@ -13,6 +14,7 @@ const useStore = create((set) => ({
             resume: section === "resume",
             contact: section === "contact",
             project: section === "projects",
+            profile: section === "profile"
         });
     }
 }));

@@ -1,96 +1,37 @@
 import React from "react";
-import Card from "./Card";
 import { frontendSkills, backendSkills, databases, languages, tools } from "../data/skills";
-
+ const SkillSection = ({ title, skills }) => (
+    <div className="mb-8 max-sm:mb-6">
+      <h2 className="text-2xl max-sm:text-lg font-bold mb-4 max-sm:mb-3 font-orbitron tracking-[3px] max-sm:tracking-[1px] text-gray-800 border-b-2 border-gray-300 pb-2">
+        {title}
+      </h2>
+      <div className="flex flex-wrap gap-3 max-sm:gap-2">
+        {skills?.map((skill, index) => (
+          <span
+            key={index}
+            className="px-4 py-2 max-sm:px-3 max-sm:py-1.5 bg-white border border-gray-300 rounded-lg text-sm max-sm:text-xs font-medium text-gray-700 hover:border-gray-400 hover:bg-gray-50 transition-all duration-200 shadow-sm hover:shadow-md"
+          >
+            {skill.title}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
 const SkillPage = () => {
   return (
-    <>
-      <div className="px-2">
-        <div className="px-2">
-          <h1 className="text-3xl font-bold lg:mt-14 p-1 font-orbitron tracking-[5px] border-b-[0.5px] border-gray-100 max-sm:mt-2">
-            Frontend
-          </h1>
-        </div>
-        <div className="grid grid-cols-3 gap-4 scroll-auto max-lg:grid-cols-2 max-sm:grid-cols-1 mt-5 px-2 ">
-          {frontendSkills?.map((skill, index) => (
-            <Card
-              key={index}
-              icon={skill.icon}
-              title={skill.title}
-              details={skill.details}
-            />
-          ))}
-        </div>
+    <div className="w-full min-h-[100vh] bg-gray-50 p-8 max-sm:p-4 pt-[80px] max-sm:pt-[60px]">
+      <h1 className="text-4xl max-sm:text-2xl font-bold mb-10 max-sm:mb-6 font-orbitron tracking-[5px] max-sm:tracking-[2px] text-center text-gray-800">
+        Skills
+      </h1>
+      
+      <div className="max-w-4xl mx-auto space-y-6 max-sm:space-y-4">
+        <SkillSection title="Frontend" skills={frontendSkills} />
+        <SkillSection title="Backend" skills={backendSkills} />
+        <SkillSection title="Databases" skills={databases} />
+        <SkillSection title="Languages" skills={languages} />
+        <SkillSection title="Tools" skills={tools} />
       </div>
-      <div className="px-2">
-        <div className="px-2">
-          <h1 className="text-3xl p-1 font-bold lg:mt-14 font-orbitron tracking-[5px] border-b-[0.5px] border-gray-100 max-sm:mt-2">
-            Backend
-          </h1>
-        </div>
-        <div className="grid px-2 grid-cols-3 gap-4 scroll-auto max-lg:grid-cols-2 max-sm:grid-cols-1 mt-5">
-          {backendSkills?.map((skill, index) => (
-            <Card
-              key={index}
-              icon={skill.icon}
-              title={skill.title}
-              details={skill.details}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="px-2">
-        <div className="px-2">
-          <h1 className="text-3xl p-1 font-bold lg:mt-14 font-orbitron tracking-[5px] border-b-[0.5px] border-gray-100 max-sm:mt-2">
-            Databases
-          </h1>
-        </div>
-        <div className="grid px-2 grid-cols-3 gap-4 scroll-auto max-lg:grid-cols-2 max-sm:grid-cols-1 mt-5">
-          {databases?.map((skill, index) => (
-            <Card
-              key={index}
-              icon={skill.icon}
-              title={skill.title}
-              details={skill.details}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="px-2">
-        <div className="px-2">
-          <h1 className="text-3xl p-1 font-bold lg:mt-14 font-orbitron tracking-[5px] border-b-[0.5px] border-gray-100 max-sm:mt-2">
-            Languages
-          </h1>
-        </div>
-        <div className="grid px-2 grid-cols-3 gap-4 scroll-auto max-lg:grid-cols-2 max-sm:grid-cols-1 mt-5">
-          {languages?.map((skill, index) => (
-            <Card
-              key={index}
-              icon={skill.icon}
-              title={skill.title}
-              details={skill.details}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="px-2">
-        <div className="px-2">
-          <h1 className="text-3xl p-1 font-bold lg:mt-14 font-orbitron tracking-[5px] border-b-[0.5px] border-gray-100 max-sm:mt-2">
-            Tools
-          </h1>
-        </div>
-        <div className="grid px-2 grid-cols-3 gap-4 scroll-auto max-lg:grid-cols-2 max-sm:grid-cols-1 mt-5">
-          {tools?.map((skill, index) => (
-            <Card
-              key={index}
-              icon={skill.icon}
-              title={skill.title}
-              details={skill.details}
-            />
-          ))}
-        </div>
-      </div>
-    </>
+    </div>
   );
 };
 

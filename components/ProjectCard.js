@@ -3,22 +3,22 @@ import Image from 'next/image';
 
 const ProjectCard = ({ title, description, stack, image, HostedLink, GithubLink }) => {
 return (
-    <div className=" border-2 border-[rgba(75,30,133,0.5)] rounded-[1.5em] bg-gradient-to-br from-[rgba(75,30,133,1)] to-[rgba(75,30,133,0.01)] text-white font-nunito p-[1em] flex flex-col gap-[0.75em] backdrop-blur-[12px] hover:border-[rgba(75,30,133,1)] hover:from-[rgba(75,30,133,0.8)] hover:to-[rgba(75,30,133,0.2)] transition-all duration-300 hover:shadow-2xl">
-      <Image src={image} alt={title} className=" w-full object-cover " />
-      <h1 className="text-[1.5em] font-bold">{title}</h1>
-      <p className="text-[0.9em]">{description}</p>
-      <div className="flex flex-wrap gap-2 text-[0.8em]">
+    <div className="border border-gray-300 rounded-2xl bg-white text-gray-800 font-nunito p-6 flex flex-col gap-4 hover:border-gray-400 hover:shadow-xl transition-all duration-300">
+     
+      <h1 className="text-2xl font-bold text-gray-800">{title}</h1>
+      <p className="text-sm text-gray-600 leading-relaxed">{description}</p>
+      <div className="flex flex-wrap gap-2 text-xs">
         {stack.map((tech, index) => (
-          <span key={index} className="px-2 py-1 bg-[rgba(75,30,133,0.5)] rounded-full">
+          <span key={index} className="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-full border border-gray-300 font-medium">
             {tech}
           </span>
         ))}
       </div>
       <div className="flex gap-4 mt-auto">
-        <a href={HostedLink} target="_blank" rel="noopener noreferrer" className="text-blue-400 border p-1 rounded-sm hover:shadow-md">
+        <a href={HostedLink} target="_blank" rel="noopener noreferrer" className="text-gray-700 bg-gray-100 px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-200 hover:shadow-md transition-all duration-200 font-medium">
           Live Demo
         </a>
-        <a href={GithubLink} target="_blank" rel="noopener noreferrer" className="text-blue-400 border p-1 rounded-sm hover:shadow-md">
+        <a href={GithubLink} target="_blank" rel="noopener noreferrer" className="text-gray-700 bg-gray-100 px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-200 hover:shadow-md transition-all duration-200 font-medium">
           GitHub
         </a>
       </div>

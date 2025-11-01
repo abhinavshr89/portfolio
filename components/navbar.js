@@ -7,11 +7,11 @@ const Navbar = () => {
   console.log("Navbar rendered");
 
   return (
-    <div className="flex sm:gap-2 w-full rounded-md font-orbitron bg-opacity-30 backdrop-filter backdrop-blur-lg backdrop-brightness-75 shadow-lg lg:fixed lg:z-10">
+    <div className="flex sm:gap-2 w-full rounded-md font-orbitron bg-white/90 backdrop-filter backdrop-blur-lg shadow-md border border-gray-200 lg:fixed lg:z-10">
+      <NavButton content="Profile" />
       <NavButton content="Skills" />
       <NavButton content="Projects" />
       <NavButton content="Contact" />
-     
     </div>
   );
 };
