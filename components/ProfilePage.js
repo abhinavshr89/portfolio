@@ -11,7 +11,7 @@ const ProfilePage = () => {
         {/* Social Links */}
         <div className="flex gap-4 max-sm:gap-3">
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://linkedin.com/in/abhinav3113"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white border-2 border-gray-300 p-3 max-sm:p-2 rounded-lg hover:border-blue-500 hover:bg-blue-50 hover:shadow-md transition-all duration-300 group"
@@ -23,7 +23,7 @@ const ProfilePage = () => {
           </a>
           
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/abhinavshr89"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white border-2 border-gray-300 p-3 max-sm:p-2 rounded-lg hover:border-gray-800 hover:bg-gray-100 hover:shadow-md transition-all duration-300 group"
@@ -35,7 +35,7 @@ const ProfilePage = () => {
           </a>
           
           <a
-            href="https://leetcode.com/yourusername"
+            href="https://leetcode.com/u/abhinav312003"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white border-2 border-gray-300 p-3 max-sm:p-2 rounded-lg hover:border-orange-500 hover:bg-orange-50 hover:shadow-md transition-all duration-300 group"
